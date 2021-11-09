@@ -33,7 +33,7 @@ torch.manual_seed(0)
 def _save_config_file(model_checkpoints_folder):
     if not os.path.exists(model_checkpoints_folder):
         os.makedirs(model_checkpoints_folder)
-        shutil.copy('./config.yaml', os.path.join(model_checkpoints_folder, 'config.yaml'))
+        shutil.copy('./ConVIRT-pytorch/config.yaml', os.path.join(model_checkpoints_folder, 'config.yaml'))
 
 class SimCLR(object):
     def __init__(self, dataset, config):
